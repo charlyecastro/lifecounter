@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    android:id="@+id/constraint">
+
+    <TextView
+        android:id="@+id/player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Player 1"
+        android:textSize="24sp"
+        android:textColor="#10222B"
+        app:layout_constraintStart_toStartOf="@+id/btnPlus1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/lives1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Lives: "
+        android:textSize="24sp"
+        android:textColor="#10222B"
+        app:layout_constraintStart_toStartOf="@+id/btnPlus5_1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnPlus1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:tag="btnPlus1"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/btnMin1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player1" />
+
+
+    <Button
+        android:id="@+id/btnMin1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:tag="btnMin1"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/btnPlus5_1"
+        app:layout_constraintStart_toEndOf="@+id/btnPlus1"
+        app:layout_constraintTop_toBottomOf="@+id/player1"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnPlus5_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:tag="btnPlus5_1"
+        android:text="+5"
+        app:layout_constraintEnd_toStartOf="@+id/btnMin5_1"
+        app:layout_constraintStart_toEndOf="@+id/btnMin1"
+        app:layout_constraintTop_toBottomOf="@+id/lives1" />
+
+    <Button
+        android:id="@+id/btnMin5_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:tag="btnMin5_1"
+        android:text="-5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnPlus5_1"
+        app:layout_constraintTop_toBottomOf="@+id/lives1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Player 2"
+        android:textSize="24sp"
+        android:textColor="#10222B"
+        app:layout_constraintStart_toStartOf="@+id/btnPlus2"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlus1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/lives2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Lives:"
+        android:textSize="24sp"
+        android:textColor="#10222B"
+        app:layout_constraintStart_toStartOf="@+id/btnPlus5_2"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlus5_1"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnPlus2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:tag="btnPlus2"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/btnMin2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player2" />
+
+    <Button
+        android:id="@+id/btnMin2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:tag="btnMin2"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/btnPlus5_2"
+        app:layout_constraintStart_toEndOf="@+id/btnPlus2"
+        app:layout_constraintTop_toBottomOf="@+id/player2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnPlus5_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:tag="btnPlus5_2"
+        android:text="+5"
+        app:layout_constraintEnd_toStartOf="@+id/btnMin5_2"
+        app:layout_constraintStart_toEndOf="@+id/btnMin2"
+        app:layout_constraintTop_toBottomOf="@+id/lives2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnMin5_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:tag="btnMin5_2"
+        android:text="-5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnPlus5_2"
+        app:layout_constraintTop_toBottomOf="@+id/lives2" />
+
+    <TextView
+        android:id="@+id/player3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Player 3"
+        android:textSize="24sp"
+        android:textColor="#10222B"
+        app:layout_constraintStart_toStartOf="@+id/btnPlus3"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlus2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/lives3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Lives:"
+        android:textSize="24sp"
+        android:textColor="#10222B"
+        app:layout_constraintStart_toStartOf="@+id/btnPlus5_3"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlus5_2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnPlus3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:tag="btnPlus3"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/btnMin3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player3" />
+
+    <Button
+        android:id="@+id/btnMin3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:tag="btnMin3"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/btnPlus5_3"
+        app:layout_constraintStart_toEndOf="@+id/btnPlus3"
+        app:layout_constraintTop_toBottomOf="@+id/player3" />
+
+    <Button
+        android:id="@+id/btnPlus5_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:tag="btnPlus5_3"
+        android:text="+5"
+        app:layout_constraintEnd_toStartOf="@+id/btnMin5_3"
+        app:layout_constraintStart_toEndOf="@+id/btnMin3"
+        app:layout_constraintTop_toBottomOf="@+id/lives3" />
+
+    <Button
+        android:id="@+id/btnMin5_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:tag="btnMin5_3"
+        android:text="-5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnPlus5_3"
+        app:layout_constraintTop_toBottomOf="@+id/lives3" />
+
+    <TextView
+        android:id="@+id/player4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Player 4"
+        android:textSize="24sp"
+        android:textColor="#10222B"
+        app:layout_constraintStart_toStartOf="@+id/btnPlus4"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlus3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/lives4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Lives:"
+        android:textSize="24sp"
+        android:textColor="#10222B"
+        app:layout_constraintStart_toStartOf="@+id/btnPlus5_4"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlus5_3"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnPlus4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:tag="btnPlus4"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/btnMin4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player4" />
+
+    <Button
+        android:id="@+id/btnMin4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:tag="btnMin4"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/btnPlus5_4"
+        app:layout_constraintStart_toEndOf="@+id/btnPlus4"
+        app:layout_constraintTop_toBottomOf="@+id/player4" />
+
+    <Button
+        android:id="@+id/btnPlus5_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:tag="tnPlus5_4"
+        android:text="+5"
+        app:layout_constraintEnd_toStartOf="@+id/btnMin5_4"
+        app:layout_constraintStart_toEndOf="@+id/btnMin4"
+        app:layout_constraintTop_toBottomOf="@+id/lives4" />
+
+    <Button
+        android:id="@+id/btnMin5_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:tag="btnMin5_4"
+        android:text="-5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnPlus5_4"
+        app:layout_constraintTop_toBottomOf="@+id/lives4" />
+
+
+</android.support.constraint.ConstraintLayout>
